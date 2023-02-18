@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Odoo16",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "python": "C:\\Odoo\\python\\python.exe",
+            "program": "C:\\Users\\rsbas\\OneDrive\\Escritorio\\Ingeniería Informática - Tecnologías Informáticas\\SIE\\SIE2223\\odoo-bin",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+
+                "--config=C:\\Users\\rsbas\\OneDrive\\Escritorio\\Ingeniería Informática - Tecnologías Informáticas\\SIE\\SIE2223\\odoo.conf"
+            ],
+            "cwd": "${workspaceRoot}",
+            "env": {},
+            "envFile": "C:\\Users\\rsbas\\OneDrive\\Escritorio\\Ingeniería Informática - Tecnologías Informáticas\\SIE\\SIE2223/.env",
+            "redirectOutput": true
+        }
+    ]
+}
