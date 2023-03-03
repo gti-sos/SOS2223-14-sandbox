@@ -1,3 +1,6 @@
+/*
+                    CLASE 17/02
+
 console.log("Hello world");
 var a;                          // No es necesario declarar las variables pero es recomendable.
 a = 1;
@@ -53,18 +56,17 @@ log("Mi fantastico log".toLowerCase());
 
 var o = new Object();
 
-/*
 o.name = "petete";
 o.l = log;
 o.l("log del objeto");
-*/
+
 
 var m = new Map();
 
 var numbers = new Array();
 
 var numbers = [1,2,3,4];
-/*
+
 a[0] = 1;
 a[1] = 2;
 a[2] = 3;
@@ -73,7 +75,7 @@ a[3] = 4;
 a.push(5);              // Añade un valor al final.
 
 log(a);
-*/
+
 
 for (var i=0;i<numbers.length;i++) {
     log(numbers[i]);
@@ -111,3 +113,21 @@ var i =  numbers
 
 log(i);
 
+*/
+
+//                  CLASE 24/02
+
+var cool = require("cool-ascii-faces");
+var express = require("express");
+//var port = 12345;
+var port = process.env.PORT || 12345;
+var app = express();
+
+app.get("/faces", (request,response) => {
+    response.send(cool());
+    console.log("New request");
+});
+
+app.listen(port,() =>{
+    console.log(`Server ready in port ${port}`);
+});
